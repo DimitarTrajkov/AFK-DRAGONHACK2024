@@ -1,7 +1,7 @@
 import React from "react";
-import GraphElement from "./GraphElement";
-import SideNavigation from "./SideNavigation";
-import StatsElement from "./StatsElement";
+import GraphElement from "../Components/GraphElement";
+import SideNavigation from "../Components/SideNavigation";
+import StatsElement from "../Components/StatsElement";
 const Stats = () => {
   return (
     <div className="container w-auto h-auto bg-[#E8F1F2]">

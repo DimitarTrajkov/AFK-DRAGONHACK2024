@@ -13,7 +13,6 @@ const LoginPage = () => {
             <p>LogIn</p>
             <div className="flex flex-col w-fit bg-blue-400">
                 <LoginButton />
-                <LogoutButton />
             </div>
         </div>
       </div>
@@ -25,15 +24,7 @@ const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
   return (
-    <button onClick={() => loginWithRedirect()}>Log In</button>
-  );
-};
-
-const LogoutButton = () => {
-  const { logout } = useAuth0();
-
-  return (
-    <button onClick={() => logout()}>Log Out</button>
+    <button onClick={() => loginWithRedirect({appState: {returnTo: "/afk-dragonhack/chart"}})}>Log In</button>
   );
 };
 
