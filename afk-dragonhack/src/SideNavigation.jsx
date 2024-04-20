@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const SideNavigation = () => {
   return (
-    <div className="flex flex-col bg-[#13293D] text-white h-full p-4 text-xl text-center m-auto" id="SideBar">
+    <div className="w-60 flex flex-col bg-[#13293D] text-white h-screen p-4 text-xl text-center m-auto" id="SideBar">
       <img
                 src={logo}
                 className="w-1/2 mx-auto"
