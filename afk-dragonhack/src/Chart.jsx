@@ -1,5 +1,6 @@
 import React from "react";
 import SideNavigation from "./SideNavigation";
+import ChartElement from "./ChartElement";
 
 const Chart = () => {
   
@@ -11,7 +12,7 @@ const Chart = () => {
               <SideNavigation />
               </div>
             <div className="p-5 justify-center m-auto">
-              
+              <ChartElement/>
             </div>
           </div>
         </div>
