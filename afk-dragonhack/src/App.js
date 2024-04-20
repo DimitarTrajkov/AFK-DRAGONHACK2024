@@ -5,7 +5,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import './index.css';
+import "./index.css";
 import Chart from "./Chart.jsx";
 import LoginPage from "./LoginPage.jsx";
 import { Auth0Provider } from "@auth0/auth0-react";
@@ -15,24 +15,21 @@ import Prediction from "./Prediciton.jsx";
 const App = () => {
   return (
     <Auth0Provider
-    domain="dev-d46o4873h5oi4o83.eu.auth0.com"
-    clientId="6ZHK6AYtyovqSSLm5IHc3FY7dS09U90E"
-    redirectUri={window.location.origin}
-  >
-    <Router>
-      <div>
-        <Routes>
-          <Route
-            path="/afk-dragonhack/"
-            element={<LoginPage />}
-          />
-          <Route path="/afk-dragonhack/chart" element={<Chart />} />
-          <Route path="/afk-dragonhack/stats" element={<Stats />} />
-          <Route path="/afk-dragonhack/prediction" element={<Prediction />} />
-          <Route path="*" element={<Navigate to="/afk-dragonhack/" />} />
-        </Routes>
-      </div>
-    </Router>
+      domain="dev-m0ih01sagxoshwf8.us.auth0.com"
+      clientId="hlF1vajTmUqzk4LoUCXIme1V9rWOy09i"
+      redirectUri="http://localhost:3000/afk-dragonhack/chart"
+    >
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/afk-dragonhack/" element={<LoginPage />} />
+            <Route path="/afk-dragonhack/chart" element={<Chart />} />
+            <Route path="/afk-dragonhack/stats" element={<Stats />} />
+            <Route path="/afk-dragonhack/prediction" element={<Prediction />} />
+            <Route path="*" element={<Navigate to="/afk-dragonhack/" />} />
+          </Routes>
+        </div>
+      </Router>
     </Auth0Provider>
   );
 };
