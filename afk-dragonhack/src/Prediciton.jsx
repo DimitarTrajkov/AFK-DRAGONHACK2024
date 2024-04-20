@@ -9,7 +9,7 @@ const Prediction = () => {
             <div className="flex-initial w-1/5">
               <SideNavigation />
             </div>
-            <div className="p-5 justify-center m-auto">
+            <div className="p-5 justify-center m-auto"
                 <div className="flex flex-row gap-x-4 p-5">
                 <StatsElement text="Accuracy" percentage="90%" color="bg-[#006494]"/>
                 <StatsElement text="Accuracy" percentage="90%" color="bg-[#247BA0]"/>
