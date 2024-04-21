@@ -12,7 +12,7 @@ const options = {
 
 const MyChart = ({ data }) => {
   return (
-    <div>
+    <div >
       <Chart
         chartType="LineChart"
         width="520px"
@@ -24,17 +24,15 @@ const MyChart = ({ data }) => {
   );
 };
 
-const GraphElement = () => {
+const GraphElementPR = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/DATA.json'); // Relative path to your JSON file
+        const response = await fetch('/DATA2.json'); // Relative path to your JSON file
         const jsonData = await response.json();
         setData(jsonData);
-        console.log(data);
-
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -50,9 +48,9 @@ const GraphElement = () => {
   return (
     <div className="h-[240px] w-full gap-x-5 flex flex-row">
       <MyChart data={data} />
-      <p className="h-full w-full bg-white rounded-xl p-8">This chart shows the <span className="font-bold">export of oil </span>mesured in thousand barrels per day for the 4 biggest country exportes to the USA</p>
+      <p className="h-full w-full bg-white rounded-xl p-8">This chart shows the <span className="font-bold">production of oil </span>mesured in thousand barrels per day for the 4 biggest country exportes to the USA</p>
     </div>
   );
 };
 
-export default GraphElement;
+export default GraphElementPR;
