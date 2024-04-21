@@ -4,20 +4,20 @@ import ChartElement from "../Components/ChartElement";
 
 const Chart = () => {
 
-  return (
-  
+  return (  
     <div className="container w-auto h-auto bg-[#E8F1F2]">
         <div className="container mx-auto">
           <div className="flex">
-          <div className="w-60">
-              <SideNavigation />
+              <div className="w-56">
+                <SideNavigation />
               </div>
-            <div className="p-5 justify-center m-auto">
-              <ChartElement/>
+              <div className="justify-center m-auto">
+                <ChartElement/>
+              </div>
             </div>
           </div>
         </div>
-    </div>)
+  )
 };
 
 export default Chart;

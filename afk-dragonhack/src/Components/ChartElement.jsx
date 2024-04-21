@@ -19,8 +19,8 @@ function ChartElement() {
       script.async = true;
       script.innerHTML = `
         {
-          "width": 1000,
-          "height": 600,  
+          "width": 1100,
+          "height": 650,  
           "autosize": true,
           "symbol": "TVC:USOIL",
           "interval": "D",
@@ -42,7 +42,6 @@ function ChartElement() {
   return (
     <div className="tradingview-widget-container" ref={container} style={{ margin: "auto",  width: "80%" }}>
       <div className="tradingview-widget-container__widget" style={{ height: "calc(100% - 32px)", width: "100%" }}></div>
-      <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span className="blue-text">Track all markets on TradingView</span></a></div>
     </div>
   );
 }

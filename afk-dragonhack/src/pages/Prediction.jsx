@@ -1,7 +1,9 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import GraphElement from "../Components/GraphElement";
 import SideNavigation from "../Components/SideNavigation";
-import NewsElement from "../Components/NewsElement";
+import ShipDataElement from "../Components/ShipDataElement";
+import ShipMap from "../Components/ShipMap";
+import Interpretation from "../Components/Interpretation";
+import StockInterpretation from "../Components/StockInterpretation";
 
 const Prediction = () => {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -11,21 +13,20 @@ const Prediction = () => {
   }
   return (
     isAuthenticated && (
-    <div className="container w-auto h-auto bg-[#E8F1F2]">
+    <div className="container w-auto h-full bg-[#E8F1F2] overflow-y-hidden">
         <div className="container mx-auto">
           <div className="flex">
             <div className="w-60">
               <SideNavigation />
             </div>
-            <div className="p-5 justify-center m-auto w-full">
-                <div className="grid grid-cols-2 gap-y-4 gap-x-4 p-5">
-                    <GraphElement text="Graph" percentage="90%" />
-                    
-                    <GraphElement text="Graph" percentage="90%" />
-                    <GraphElement text="Graph" percentage="90%" />
+            <div className="px-12 justify-center m-auto">
+                <div className="grid grid-cols-2 gap-y-5 gap-x-7">
+                  <Interpretation />
+                  <StockInterpretation  />
+                  <ShipDataElement />
+                  <ShipMap />
                 </div>
             </div>
-            <NewsElement text="News" />
           </div>
         </div>
     </div>)
