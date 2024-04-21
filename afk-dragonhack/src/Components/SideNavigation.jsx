@@ -20,8 +20,8 @@ const SideNavigation = () => {
               </div>
         </div>
       <NavElement name="Prediction" link="/afk-dragonhack/prediction"/>
-      <NavElement name="Chart" link="/afk-dragonhack/chart"/>
       <NavElement name="Statistics" link="/afk-dragonhack/stats"/>
+      <NavElement name="Chart" link="/afk-dragonhack/chart"/>
       
       </div>
       
