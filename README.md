@@ -1,6 +1,8 @@
 # OCEANTRADE: React Frontend with Python Backend
 
-<img src="afk-dragonhack/src/icons/oceantradeLogo.png" alt="Logo" style="display:grid; place-items:center;" width="400" height="400">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <img src="afk-dragonhack/src/icons/oceantradeLogo.png" alt="Logo" width="400" height="400">
+</div>
 
 Welcome to our React app with a Python backend! This README will guide you through the setup and usage of our project.
 
