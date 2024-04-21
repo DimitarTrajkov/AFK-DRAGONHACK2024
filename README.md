@@ -6,6 +6,11 @@
 
 Welcome to our React app with a Python backend! This README will guide you through the setup and usage of our project.
 
+![SignUpPage](./afk-dragonhack/src/images/sign%20up%20page.png)
+![PredictionPage](./afk-dragonhack/src/images/prediction%20page.png)
+![StatisticsPage](./afk-dragonhack/src/images/statistics%20page.png)
+![ChartPage](./afk-dragonhack/src/images/chart%20page.png)
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -31,6 +36,8 @@ To get started, follow these steps:
 
    ```bash
    cd AFK-DRAGONHACK2024
+   cd afk-dragonhack
+   cd src
    ```
 
 3. Install the necessary dependencies for the frontend using npm:
@@ -42,6 +49,7 @@ To get started, follow these steps:
 4. Install the necessary dependencies for the backend. Make sure you have Python installed on your system.
 
    ```bash
+   cd ..
    pip install -r requirements.txt
    ```
 
