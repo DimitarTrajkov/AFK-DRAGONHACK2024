@@ -1,4 +1,8 @@
-# React Frontend with Python Backend
+# OCEANTRADE: React Frontend with Python Backend
+
+<div style="text-align:center">
+    <img src="src/icons/oceantradeLogo.png" alt="Logo" width="400" height="400">
+</div>
 
 Welcome to our React app with a Python backend! This README will guide you through the setup and usage of our project.
 
