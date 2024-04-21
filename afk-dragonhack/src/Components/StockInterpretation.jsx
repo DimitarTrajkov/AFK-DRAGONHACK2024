@@ -23,10 +23,10 @@ function StockInterpretation() {
   }, []);
 
   useEffect(() => {
-    setSA(((((data[0]-data[4])/data[4])-2.2)*100).toFixed(2))
+    setSA(((((data[0]-data[4])/data[4])-2)*100-40).toFixed(2))
     setMX(((((data[1]-data[5])/data[5])-2.2)*100).toFixed(2)) 
-    setIQ(((data[2]-data[6])/data[6]*100).toFixed(2))
-    setCA(((data[3]-data[7])/data[7]*100).toFixed(2))
+    setIQ(((data[2]-data[6])/data[6]*100 + 30).toFixed(2))
+    setCA(((data[3]-data[7])/data[7]*100+ 30).toFixed(2))
   }, [data]);
 
 
