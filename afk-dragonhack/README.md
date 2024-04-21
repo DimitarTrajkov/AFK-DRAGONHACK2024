@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# React Frontend with Python Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our React app with a Python backend! This README will guide you through the setup and usage of our project.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is a combination of a React frontend and a Python backend, providing a seamless user experience with powerful backend functionality.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To get started, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine using:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/DimitarTrajkov/AFK-DRAGONHACK2024.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd AFK-DRAGONHACK2024
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the necessary dependencies for the frontend using npm:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Install the necessary dependencies for the backend. Make sure you have Python installed on your system.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once you have installed the dependencies, you can start the frontend and backend servers.
 
-## Learn More
+### Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start the React frontend, run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start the Python backend, run:
 
-### Analyzing the Bundle Size
+```bash
+python server.py
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Features
 
-### Making a Progressive Web App
+### What the App Does
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Our application, titled **OCEANTRADE**, is designed to track ships carrying oil across the world's oceans and utilize this data, alongside insights from an advanced AI prediction model, to forecast fluctuations in the oil market. Leveraging a sophisticated algorithm, our app analyzes the speed of oil delivery by these ships and correlates it with market trends to provide insights into future price movements.
 
-### Advanced Configuration
+### Tracking Ships
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The app continuously monitors the movement of oil tankers across various maritime routes. By gathering real-time data on vessel positions, routes, and speeds, it builds a comprehensive picture of the global oil shipping network.
 
-### Deployment
+### Predicting Market Fluctuations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Using advanced predictive modeling techniques, our app interprets the speed of oil deliveries as a leading indicator of market conditions. By analyzing historical data and current shipping patterns, it generates forecasts on oil supply and demand dynamics, enabling users to anticipate market shifts with greater accuracy.
 
-### `npm run build` fails to minify
+### User Interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The frontend interface offers users an intuitive platform to access and interact with the app's features. Through dynamic visualizations and customizable dashboards, users can explore historical trends, view real-time shipping data, and receive predictive insights into the oil market.
+
+### Backend Processing
+
+Behind the scenes, our Python backend orchestrates the collection, processing, and analysis of vast amounts of shipping and market data. Leveraging cutting-edge algorithms and machine learning techniques, it transforms raw data into actionable insights, ensuring high performance and reliability.
+
+### Key Features
+
+- **Real-Time Ship Tracking:** Gain visibility into the current location and movement of oil tankers worldwide.
+- **Market Predictions:** Receive forecasts and predictions on future oil market trends based on shipping data analysis.
+- **Real-Time News Updates:** Stay informed with real-time updates on news and trends affecting the global oil market.
+- **Customizable Dashboard:** Tailor the app's interface to suit your specific monitoring and analysis needs.
+- **Historical Data Analysis:** Explore historical trends and patterns in oil shipping and market dynamics for informed decision-making.
+
+With our app, users can stay ahead of the curve in the dynamic and complex world of the oil market, making smarter decisions backed by data-driven insights.
